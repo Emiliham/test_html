@@ -1,2 +1,2 @@
 # Testing
-Practising HTML. Making an easy website.
+Practising HTML and CSS.

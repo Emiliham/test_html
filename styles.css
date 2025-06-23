@@ -1,7 +1,21 @@
 p {
     color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 h1, h2, h3 {
     color: rgb(255, 130, 151);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
+}
+
+div {
+    color: white;
+    background-color: black;
+}
+
+img {
+    height: auto;
+    width: 200px;
 }
