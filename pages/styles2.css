@@ -1,3 +1,12 @@
-* {
+p {
     color: green;
+}
+
+button {
+    background-color: rgb(190, 239, 190);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    height: 50px;
+    width: 100px;
 }
