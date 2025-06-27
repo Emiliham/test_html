@@ -16,15 +16,26 @@ img {
     width: 200px;
 }
 
-.center-content {
+div {
+    padding: 5px;
+    display: table;
+    padding: 0px 70px;
+    border: 2px solid rgb(255, 130, 151);
+    margin: 20px auto; /* Now its centered horizontally*/
+}
+
+.introduction {
 
     text-align: center;
-    margin-top: 100px;
+    background-color: antiquewhite;
+}
+
+.main-content {
+    background-color: beige;
 }
 
 button {
     background-color: pink;
-    padding: 20px;
-    border: 10px solid;
-    display: inline;
+    padding: 10px;
+    border: 1px solid rgb(173, 46, 67);
 }

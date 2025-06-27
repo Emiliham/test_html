@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <div class="center-content">
+        <div class="introduction">
             <h1>Emilie sin side</h1>
             <button>ladidadida</button>
             <button>hei</button>
@@ -15,13 +15,14 @@
         <p>Den første linken åpnes i samme fane, mens den andre linken åpnes i en egen fane:</p>
         <!--Link til en nettside-->
         <a href="https://www.theodinproject.com/about">About The Odin Project</a>
-        <p>
+        
             <!--Åpner linken i en ny fane-->
             <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a>
-        </p>
-
-        <h2>Forskjellige typer linker</h2>
-        <h3>Absolutt-linker</h3>
+        
+        <div class = "main-content">
+            <h2>Forskjellige typer linker</h2>
+            <h3>Absolutt-linker</h3>
+        </div>
             <p> Linker til andre sider på andre nettsider er kalt obsolutt-linker. En typisk link vil være av disse delene:</p>
             <p>scheme://domain/path</p>
             <p> En aboslutt-link vill alltid inneholde "scheme and domain" til destinasjonen. Dette er feks en absolutt link:</p>
@@ -30,15 +31,20 @@
                 <li>Scheme er hvordan du skal nå noe, feks https</li>
                 <li>Domain er hvor du skal. Feks en nettadresse eller filsti</li>
             </ul>
-        <h3>Relative-linker</h3>
+        <div class = "main-content">
+            <h3>Relative-linker</h3>
+        </div>
             <p>Det er linker til andre sider som er på din egen nettside. De inkluderer ikke domain-navnet, 
                 siden det er en annen side på den samme siden. Den bare antar at domain-navnet vil være den 
                 samme som den siden vi laget linken på. </p>
             <p> Så relative linker vil bare inkludere filstien til den andre siden, relativt til den siden du lager linken på. Det er gjort under(det synes ikke på nettsiden, men hvis man går inn å ser på HTML så ser man hvordan det er gjort.)</p>
-            <p> <a href="./pages/about.html">Hund</a></p>
+            <p> På denne siden er det en <a href="./pages/about.html">hund</a></p>
             <p> <a href="./pages/helo.html">helo</a></p>
-
-        <h2>Bilder</h2>
+        
+        <div class = "main-content">
+            <h2>Bilder</h2>
+        </div>
+            
         <p> For vise et bilde så bruker man bruker man et img element. Det er et void element, så det trenger ikke en closing tag fordi de er tomme.
             De inneholder ingen ting. For å få opp et bilde så bruker man scr som forteller nettleseren hvor bilde-filen er lokalisert. 
         </p>
