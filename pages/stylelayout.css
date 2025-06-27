@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(240, 224, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-container {
+    color: #ffffff;
+    background-color: #5995DA;  /* Blue */
+}
+
+.menu div{
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+    border: 2px solid rgb(9, 34, 47);
+    flex: 1;
+}

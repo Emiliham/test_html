@@ -24,7 +24,7 @@ h1, h2, h3 {
     background: beige;
     border: 2px solid rgb(255, 130, 151);
     height: 80px;
-    /* Alle elementene får like mye plass*/
+    /* Alle elementene får like mye plass */
     flex: 1;
 }
 
@@ -36,6 +36,7 @@ h1, h2, h3 {
     background: beige;
     border: 2px solid rgb(255, 130, 151);
     height: 30px;
+    margin: 4px;
     flex: 1;
 }
 
