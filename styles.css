@@ -10,6 +10,34 @@ h1, h2, h3 {
     text-align: center;
 }
 
+#midtstilt {
+    text-align: center;
+}
+
+/* er en konteiner som arrangerer barn-elementene i en rad*/
+.flex-container {
+    display: flex;
+}
+
+  /* Styrer alle div-elementene i flex-konteineren */
+.flex-container div {
+    background: beige;
+    border: 2px solid rgb(255, 130, 151);
+    height: 80px;
+    /* Alle elementene får like mye plass*/
+    flex: 1;
+}
+
+.two {
+    display: flex;
+}
+
+.two div {
+    background: beige;
+    border: 2px solid rgb(255, 130, 151);
+    height: 30px;
+    flex: 1;
+}
 
 img {
     height: auto;
@@ -19,7 +47,7 @@ img {
 div {
     padding: 5px;
     display: table;
-    padding: 0px 70px;
+    padding: 0px 10px;
     border: 2px solid rgb(255, 130, 151);
     margin: 20px auto; /* Now its centered horizontally*/
 }
