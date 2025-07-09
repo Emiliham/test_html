@@ -43,7 +43,7 @@ h1, h2, h3 {
 }
 
 .inni img {
-    width: 120%;
+    width: 110%;
     display: block;
     margin: 0 auto;   /* centers image inside the box */
 }
