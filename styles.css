@@ -27,6 +27,27 @@ h1, h2, h3 {
     /* Alle elementene får like mye plass */
     flex: 1;
 }
+.one img,
+.two img,
+.three img,
+.five img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.four img {
+    width: 120%;
+    display: block;
+    margin: 0 auto;   /* centers image inside the box */
+}
+
+.inni img {
+    width: 120%;
+    display: block;
+    margin: 0 auto;   /* centers image inside the box */
+}
+
 
 .two {
     display: flex;

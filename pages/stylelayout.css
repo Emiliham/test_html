@@ -4,6 +4,11 @@
     box-sizing: border-box;
     }
 
+body {
+    background-color: rgb(248, 196, 230)
+}
+
+
 .menu {
     border: 1px solid #fff;  /* For debugging */
     width: 900px;
