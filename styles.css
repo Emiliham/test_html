@@ -32,6 +32,12 @@ h1, h2, h3 {
     display: flex;
 }
 
+a {
+    color:  rgb(255, 130, 151);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
 .two div {
     background: beige;
     border: 2px solid rgb(255, 130, 151);
