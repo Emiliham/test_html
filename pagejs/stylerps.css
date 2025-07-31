@@ -2,3 +2,7 @@
 #results {
     white-space: pre-wrap;
 }
+
+.container {
+    text-align: center;
+}
