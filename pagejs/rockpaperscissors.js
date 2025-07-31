@@ -42,34 +42,42 @@ function getHumanChoice() {
  * This function plays one round of rock paper sciccors
  */
 function playRound(humanChoice, computerChoice) {
+    // selects the #results div
+    var results = document.querySelector("#results");
+    var resultsText = "";
+
+
     if(humanChoice === computerChoice) {
-        console.log("You both chose " + humanChoice + " It's a tie.")
+        resultsText = ("You both chose " + humanChoice + ". It's a tie.")
     } else if (
         (humanChoice === "rock" && computerChoice === "scissors") ||
         (humanChoice === "paper" && computerChoice === "rock") ||
         (humanChoice === "scissors" && computerChoice === "paper")
     ) {
-        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+        resultsText = (`You win! ${humanChoice} beats ${computerChoice}`);
         humanScore++;
     } else {
-        console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+        resultsText = (`You lose! ${computerChoice} beats ${humanChoice}`);
         computerScore++;
     }
-    console.log("current score human: " + humanScore )
-    console.log("current score computer: " + computerScore )
+    results.textContent = resultsText + "\nCurrent score human: " + humanScore + "\nCurrent score computer " + computerScore;
+
 }
 
-/**
- * This functions plays a whole game of rock, paper, scissors
- * You can choose how many rounds to play in this function.
- */
-function playGame() {
-    for(let i = 0; i < 5; i++) {
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
 
-        playRound(humanSelection, computerSelection);
-    }
-}
 
-playGame()
+// here i add eventlisteners to each button
+const btnRock = document.querySelector("#rock");
+btnRock.addEventListener("click", function() {
+    playRound("rock", getComputerChoice());
+});
+
+const btnPaper = document.querySelector("#paper");
+btnPaper.addEventListener("click", function() {
+    playRound("paper", getComputerChoice());
+});
+
+const btnScissors = document.querySelector("#scissors");
+btnScissors.addEventListener("click", function() {
+    playRound("scissors", getComputerChoice());
+});
