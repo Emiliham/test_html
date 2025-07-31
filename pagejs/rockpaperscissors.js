@@ -60,8 +60,24 @@ function playRound(humanChoice, computerChoice) {
         resultsText = (`You lose! ${computerChoice} beats ${humanChoice}`);
         computerScore++;
     }
-    results.textContent = resultsText + "\nCurrent score human: " + humanScore + "\nCurrent score computer " + computerScore;
+    results.textContent = resultsText + "\nCurrent score human: " + humanScore + "\nCurrent score computer: " + computerScore;
 
+    if (humanScore === 5) {
+        results.textContent += "\nYey, you win:) You are the first one to 5 points!";
+        disableButtons();
+    } else if (computerScore === 5) {
+        results.textContent += "\nGame Over :( The computer is the first one to five points !";
+        disableButtons();
+    }
+}
+
+/**
+ * the buttons are disabled when the game is won
+ */
+function disableButtons() {
+    document.querySelector("#rock").disabled = true;
+    document.querySelector("#paper").disabled = true;
+    document.querySelector("#scissors").disabled = true;
 }
 
 
